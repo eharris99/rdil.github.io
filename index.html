@@ -7,6 +7,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 <meta name="robots" content="INDEX" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 <title>RDIL's Website!</title>
 <meta name="description" content="RDIL's GitHub pages site.  It is very cool!  Come check it out :)" />
 <meta http-equiv="expires" content="Thu, 31 Dec 2020 23:59:59 GMT" />
@@ -179,9 +180,64 @@
 		right: 0;
 		bottom: 0;
 	}
+	.jumbotron {
+		color:white;
+		display:flex;
+		align-items: center;
+  		justify-content: center;
+		height:400px;
+		background-size:cover;
+		background-image: url(https://hyperium.cc/images/mc-cinematic-blured.png);
+	}
+
 </style>
 </head>
 <body>
+	<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+<a class="navbar-brand" href="https://hyperium.cc/">
+<img alt="My Logo" width="36" height="36" />
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarContent">
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="#home" data-scroll-to="true">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#mods" data-scroll-to="true">About Me</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#features" data-scroll-to="true">Projects</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#privacy-policy" data-scroll-to="true">Privacy Policy</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#contact" data-scroll-to="true">Contact</a>
+</li>
+</ul>
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/HyperiumClient/Hyperium/" target="_blank">
+<img width="16" src="images/github.png" alt="GitHub" />
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://twitter.com/HyperiumClient/" target="_blank">
+<img width="16"  alt="Twitter" />
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link"  target="_blank">
+<img width="16"  alt="Discord" />
+</a>
+</li>
+
+</ul>
+</div>
+</nav>
 <div id='cssmenu'>
 <ul>
    <li><a href='https://rdil.github.io' id="home">Home</a></li>
@@ -196,8 +252,11 @@
 </div>
 <br />
 <div class="main">
-<h1>| RDIL's Site |</h1>
+	<div class="jumbotron">
+		<h1>| RDIL's Site |</h1>
   <p>Welcome to my site!</p>
+	</div>
+
   <br />
   <br />
   <br />
